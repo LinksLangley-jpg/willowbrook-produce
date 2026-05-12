@@ -300,6 +300,15 @@
   <div class="order-number-badge" id="successOrderNum"></div>
   <p style="margin-top:1rem;">Thanks <strong id="successName"></strong>! Your order has been sent to the store. We'll call or email you within 30 minutes to confirm.</p>
   <div class="success-details" id="successDetails"></div>
+  <div id="etransferBlock" style="display:none; margin-top:1rem; background:#fffbeb; border:1px solid #fcd34d; border-radius:12px; padding:1rem; text-align:left; font-size:0.875rem; color:#92400e;">
+    <strong>💳 How to pay by Interac e-Transfer</strong>
+    <ol style="margin-top:0.5rem; padding-left:1.25rem; line-height:2;">
+      <li>Open your banking app and send an e-transfer</li>
+      <li>Send to <strong>willowbrookproduce@outlook.com</strong></li>
+      <li>Use your order number as the message: <strong id="etransferOrderNum"></strong></li>
+      <li>We'll confirm once received and arrange your delivery</li>
+    </ol>
+  </div>
   <p style="margin-top:1rem;font-size:0.875rem;color:#6b7280;">📍 6343 198 St, Langley BC &nbsp;·&nbsp; ☎️ <a href="tel:+16045550000" style="color:var(--green);">604-555-0000</a></p>
   <br />
   <a href="index.html" class="btn-back">← Back to Home</a>
@@ -581,6 +590,10 @@ Reply to this email or call ${phone} to confirm.
         success.style.display = 'block';
         document.getElementById('successName').textContent = firstName;
         document.getElementById('successOrderNum').textContent = `Order #${orderNum}`;
+        if (orderType === 'delivery') {
+          document.getElementById('etransferBlock').style.display = 'block';
+          document.getElementById('etransferOrderNum').textContent = `Order #${orderNum}`;
+        }
         document.getElementById('successDetails').innerHTML = `
           <strong>${typeLabel}</strong><br>
           ${orderType === 'delivery' ? `📍 ${deliveryAddress}<br>` : '📍 6343 198 St, Langley BC<br>'}
