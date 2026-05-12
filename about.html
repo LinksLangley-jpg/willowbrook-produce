@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Willowbrook Produce — Langley's Local Produce Market</title>
+  <meta name="description" content="27+ years of freshness, family, and community. Meet the team behind Willowbrook Produce and learn why Langley has trusted us since the late 1990s." />
+  <link rel="canonical" href="https://willowbrookproduce.ca/about.html" />
+  <meta property="og:title" content="About Willowbrook Produce | Langley, BC" />
+  <meta property="og:description" content="The story behind 27+ years of fresh local produce, genuine care, and deep community roots in Langley, BC." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --green-900: #1b4332;
+      --green-800: #2d6a4f;
+      --green-700: #40916c;
+      --green-500: #52b788;
+      --green-300: #95d5b2;
+      --green-100: #d8f3dc;
+      --gold:      #e9a825;
+      --gold-dark: #c98f1d;
+      --cream:     #faf6f0;
+      --cream-dark:#f0ebe2;
+      --text:      #1a1a1a;
+      --text-muted:#5c5c5c;
+      --white:     #ffffff;
+      --font-serif: 'Playfair Display', Georgia, serif;
+      --font-sans:  'Inter', sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--cream);
+      color: var(--text);
+      font-family: var(--font-sans);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.2rem 3rem;
+      transition: background 0.4s, box-shadow 0.4s, padding 0.3s;
+      background: rgba(27, 67, 50, 0.96);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+
+    nav.scrolled {
+      box-shadow: 0 2px 20px rgba(0,0,0,0.2);
+      padding: 0.9rem 3rem;
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+    }
+
+    .nav-logo {
+      width: 40px;
+      height: 40px;
+      background: var(--gold);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+
+    .nav-brand-text {
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--white);
+      letter-spacing: 0.02em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2.5rem;
+      list-style: none;
+      align-items: center;
+    }
+
+    .nav-links a {
+      color: rgba(255,255,255,0.85);
+      text-decoration: none;
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover { color: var(--gold); }
+
+    .nav-cta {
+      background: var(--gold);
+      color: var(--green-900) !important;
+      padding: 0.5rem 1.25rem;
+      border-radius: 2px;
+      font-weight: 600 !important;
+      transition: background 0.2s !important;
+    }
+
+    .nav-cta:hover { background: var(--gold-dark) !important; color: var(--white) !important; }
+
+    .nav-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      flex-direction: column;
+      gap: 5px;
+      padding: 4px;
+    }
+
+    .nav-toggle span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--white);
+      border-radius: 2px;
+      transition: transform 0.3s, opacity 0.3s;
+    }
+
+    /* ── PAGE HERO ── */
+    .page-hero {
+      background: var(--green-900);
+      padding: 9rem 3rem 5rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .page-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 20% 50%, rgba(82,183,136,0.12) 0%, transparent 60%),
+        radial-gradient(circle at 80% 30%, rgba(233,168,37,0.08) 0%, transparent 50%);
+    }
+
+    .page-hero-inner {
+      position: relative;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .page-hero-tag {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      background: rgba(233,168,37,0.12);
+      border: 1px solid rgba(233,168,37,0.25);
+      padding: 0.45rem 1.1rem;
+      border-radius: 2px;
+      margin-bottom: 1.5rem;
+    }
+
+    .page-hero h1 {
+      font-family: var(--font-serif);
+      font-size: clamp(2.4rem, 5vw, 3.6rem);
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.15;
+      margin-bottom: 1.25rem;
+    }
+
+    .page-hero p {
+      font-size: 1.15rem;
+      color: rgba(255,255,255,0.7);
+      max-width: 520px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    .page-hero-leaves {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+    }
+
+    .leaf-shape {
+      position: absolute;
+      opacity: 0.07;
+      font-size: 4rem;
+      animation: leafFloat 12s ease-in-out infinite;
+    }
+
+    @keyframes leafFloat {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      33%       { transform: translateY(-18px) rotate(8deg); }
+      66%       { transform: translateY(8px) rotate(-5deg); }
+    }
+
+    /* ── STORY SECTION ── */
+    .story-section {
+      padding: 6rem 3rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+    }
+
+    .story-visual {
+      position: relative;
+    }
+
+    .story-emblem {
+      width: 100%;
+      max-width: 440px;
+      aspect-ratio: 1;
+      background: var(--green-900);
+      border-radius: 4px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1.2rem;
+      padding: 3rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .story-emblem::before {
+      content: '';
+      position: absolute;
+      inset: 16px;
+      border: 1px solid rgba(233,168,37,0.25);
+      border-radius: 2px;
+    }
+
+    .story-emblem-icon {
+      font-size: 5rem;
+      line-height: 1;
+      position: relative;
+      z-index: 1;
+    }
+
+    .story-emblem-year {
+      font-family: var(--font-serif);
+      font-size: 1rem;
+      color: var(--gold);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      position: relative;
+      z-index: 1;
+    }
+
+    .story-emblem-name {
+      font-family: var(--font-serif);
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--white);
+      text-align: center;
+      line-height: 1.2;
+      position: relative;
+      z-index: 1;
+    }
+
+    .story-emblem-sub {
+      font-size: 0.82rem;
+      color: var(--green-300);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      position: relative;
+      z-index: 1;
+    }
+
+    .story-badge {
+      position: absolute;
+      bottom: -1.5rem;
+      right: -1.5rem;
+      width: 100px;
+      height: 100px;
+      background: var(--gold);
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+    }
+
+    .story-badge-num {
+      font-family: var(--font-serif);
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--green-900);
+      line-height: 1;
+    }
+
+    .story-badge-label {
+      font-size: 0.6rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--green-900);
+      text-align: center;
+      line-height: 1.2;
+    }
+
+    .story-text h2 {
+      font-family: var(--font-serif);
+      font-size: clamp(1.8rem, 3vw, 2.5rem);
+      font-weight: 700;
+      color: var(--green-900);
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+    }
+
+    .story-text h2 em {
+      font-style: italic;
+      color: var(--green-700);
+    }
+
+    .story-text p {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      line-height: 1.8;
+      margin-bottom: 1.25rem;
+    }
+
+    .story-highlights {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .highlight-box {
+      background: var(--cream-dark);
+      border-left: 3px solid var(--green-700);
+      padding: 1rem 1.25rem;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .highlight-box strong {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--green-700);
+      margin-bottom: 0.3rem;
+    }
+
+    .highlight-box span {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+
+    /* ── VALUES SECTION ── */
+    .values-section {
+      background: var(--green-900);
+      padding: 6rem 3rem;
+    }
+
+    .values-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.75rem;
+    }
+
+    .values-inner h2 {
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 3.5vw, 2.8rem);
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.2;
+      margin-bottom: 3.5rem;
+      max-width: 540px;
+    }
+
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5px;
+    }
+
+    .value-card {
+      background: rgba(255,255,255,0.04);
+      padding: 2.5rem 2rem;
+      transition: background 0.3s;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s ease, transform 0.6s ease, background 0.3s;
+    }
+
+    .value-card.revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .value-card:hover { background: rgba(255,255,255,0.08); }
+
+    .value-icon {
+      font-size: 2.4rem;
+      margin-bottom: 1.25rem;
+      display: block;
+    }
+
+    .value-card h3 {
+      font-family: var(--font-serif);
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 0.75rem;
+    }
+
+    .value-card p {
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.6);
+      line-height: 1.75;
+    }
+
+    /* ── TEAM SECTION ── */
+    .team-section {
+      padding: 6rem 3rem;
+      background: var(--cream);
+    }
+
+    .team-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .team-header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .team-header h2 {
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 3.5vw, 2.8rem);
+      font-weight: 700;
+      color: var(--green-900);
+      margin-bottom: 1rem;
+    }
+
+    .team-header p {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      max-width: 540px;
+      margin: 0 auto;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+    }
+
+    .team-card {
+      background: var(--white);
+      border-radius: 4px;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+      border: 1px solid rgba(0,0,0,0.06);
+      transition: transform 0.3s, box-shadow 0.3s;
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    .team-card.revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .team-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.1);
+    }
+
+    .team-avatar {
+      width: 80px;
+      height: 80px;
+      background: var(--green-100);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      margin: 0 auto 1.25rem;
+      border: 3px solid var(--green-300);
+    }
+
+    .team-name {
+      font-family: var(--font-serif);
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--green-900);
+      margin-bottom: 0.3rem;
+    }
+
+    .team-role {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--green-700);
+      margin-bottom: 0.9rem;
+    }
+
+    .team-quote {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+      font-style: italic;
+    }
+
+    /* ── COMMUNITY SECTION ── */
+    .community-section {
+      padding: 6rem 3rem;
+      background: var(--cream-dark);
+    }
+
+    .community-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: start;
+    }
+
+    .community-text h2 {
+      font-family: var(--font-serif);
+      font-size: clamp(1.8rem, 3vw, 2.4rem);
+      font-weight: 700;
+      color: var(--green-900);
+      line-height: 1.2;
+      margin-bottom: 1.25rem;
+    }
+
+    .community-text p {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      line-height: 1.8;
+      margin-bottom: 1.25rem;
+    }
+
+    .community-text a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 1rem;
+      font-size: 0.88rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--green-700);
+      text-decoration: none;
+      border-bottom: 2px solid var(--green-300);
+      padding-bottom: 2px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .community-text a:hover { color: var(--green-900); border-color: var(--green-700); }
+
+    .community-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .cstat {
+      background: var(--white);
+      border-radius: 4px;
+      padding: 1.75rem;
+      text-align: center;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+      border: 1px solid rgba(0,0,0,0.06);
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .cstat.revealed { opacity: 1; transform: translateY(0); }
+
+    .cstat-num {
+      font-family: var(--font-serif);
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--green-900);
+      line-height: 1;
+      margin-bottom: 0.4rem;
+    }
+
+    .cstat-num span { color: var(--gold); }
+
+    .cstat-label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    /* ── PROMISE SECTION ── */
+    .promise-section {
+      background: var(--green-900);
+      padding: 5rem 3rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .promise-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 50% 50%, rgba(233,168,37,0.08) 0%, transparent 70%);
+    }
+
+    .promise-inner {
+      max-width: 720px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .promise-inner h2 {
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+    }
+
+    .promise-inner h2 em {
+      color: var(--gold);
+      font-style: italic;
+    }
+
+    .promise-inner p {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.65);
+      line-height: 1.8;
+      margin-bottom: 2.5rem;
+    }
+
+    .promise-btns {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      background: var(--gold);
+      color: var(--green-900);
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.9rem 2.5rem;
+      border-radius: 2px;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .btn-primary:hover { background: var(--gold-dark); transform: translateY(-2px); }
+
+    .btn-ghost {
+      background: transparent;
+      color: rgba(255,255,255,0.8);
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.9rem 2.5rem;
+      border-radius: 2px;
+      border: 1px solid rgba(255,255,255,0.25);
+      transition: border-color 0.2s, color 0.2s, transform 0.2s;
+    }
+
+    .btn-ghost:hover { border-color: rgba(255,255,255,0.7); color: var(--white); transform: translateY(-2px); }
+
+    /* ── FOOTER ── */
+    footer {
+      background: #111;
+      padding: 4rem 3rem 2rem;
+    }
+
+    .footer-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1.5fr 1.5fr;
+      gap: 3rem;
+      padding-bottom: 3rem;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .footer-brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+      text-decoration: none;
+    }
+
+    .footer-logo-circle {
+      width: 36px;
+      height: 36px;
+      background: var(--gold);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+
+    .footer-logo-text {
+      font-family: var(--font-serif);
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--white);
+    }
+
+    .footer-brand p {
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.45);
+      line-height: 1.7;
+      margin-bottom: 1.25rem;
+    }
+
+    .footer-social {
+      display: flex;
+      gap: 0.75rem;
+    }
+
+    .footer-social a {
+      width: 36px;
+      height: 36px;
+      background: rgba(255,255,255,0.07);
+      border-radius: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    .footer-social a:hover { background: var(--gold); }
+
+    .footer-col h4 {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.25rem;
+    }
+
+    .footer-col ul { list-style: none; }
+
+    .footer-col li {
+      margin-bottom: 0.6rem;
+    }
+
+    .footer-col a {
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.5);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer-col a:hover { color: var(--white); }
+
+    .footer-hours li {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.5);
+      margin-bottom: 0.4rem;
+    }
+
+    .footer-hours li span:last-child { color: rgba(255,255,255,0.35); }
+
+    .footer-contact li {
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.5);
+      display: flex;
+      align-items: flex-start;
+      gap: 0.6rem;
+    }
+
+    .footer-bottom {
+      max-width: 1200px;
+      margin: 2rem auto 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-bottom p {
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.25);
+    }
+
+    /* ── SCROLL REVEAL ── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+
+    .reveal.revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ── MOBILE ── */
+    @media (max-width: 1024px) {
+      .story-section    { grid-template-columns: 1fr; gap: 3rem; }
+      .story-emblem     { max-width: 340px; }
+      .values-grid      { grid-template-columns: 1fr 1fr; }
+      .team-grid        { grid-template-columns: repeat(2, 1fr); }
+      .community-inner  { grid-template-columns: 1fr; gap: 3rem; }
+      .footer-grid      { grid-template-columns: 1fr 1fr; gap: 2rem; }
+    }
+
+    @media (max-width: 768px) {
+      nav { padding: 1rem 1.5rem; }
+      nav.scrolled { padding: 0.8rem 1.5rem; }
+      .nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0; background: rgba(27,67,50,0.97); flex-direction: column; padding: 1.5rem; gap: 1.2rem; }
+      .nav-links.open { display: flex; }
+      .nav-toggle { display: flex; }
+      .page-hero     { padding: 8rem 1.5rem 4rem; }
+      .story-section { padding: 4rem 1.5rem; }
+      .values-section { padding: 4rem 1.5rem; }
+      .values-grid   { grid-template-columns: 1fr; }
+      .team-section  { padding: 4rem 1.5rem; }
+      .team-grid     { grid-template-columns: 1fr 1fr; }
+      .community-section { padding: 4rem 1.5rem; }
+      .community-stats { grid-template-columns: 1fr 1fr; }
+      .promise-section { padding: 4rem 1.5rem; }
+      .footer-grid   { grid-template-columns: 1fr; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+    }
+
+    @media (max-width: 480px) {
+      .team-grid { grid-template-columns: 1fr; }
+      .story-highlights { grid-template-columns: 1fr; }
+      .community-stats { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="mainNav">
+    <a class="nav-brand" href="index.html">
+      <div class="nav-logo">🌿</div>
+      <span class="nav-brand-text">Willowbrook Produce</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="index.html#carry">What We Carry</a></li>
+      <li><a href="index.html#farmers">Farmers</a></li>
+      <li><a href="index.html#reviews">Reviews</a></li>
+      <li><a href="index.html#hours" class="nav-cta">Visit Us</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-leaves" aria-hidden="true">
+      <span class="leaf-shape" style="top:15%;left:8%;animation-delay:0s">🌿</span>
+      <span class="leaf-shape" style="top:60%;left:4%;animation-delay:2s;font-size:2.5rem">🍃</span>
+      <span class="leaf-shape" style="top:25%;right:6%;animation-delay:1s">🌱</span>
+      <span class="leaf-shape" style="top:70%;right:10%;animation-delay:3s;font-size:3rem">🌿</span>
+    </div>
+    <div class="page-hero-inner">
+      <span class="page-hero-tag">Our Story</span>
+      <h1>Rooted in Langley<br><em>Since the Late '90s</em></h1>
+      <p>A family-run produce market built on honesty, freshness, and a genuine love for the people we serve.</p>
+    </div>
+  </section>
+
+  <!-- STORY SECTION -->
+  <section class="story-section">
+    <div class="story-visual reveal">
+      <div class="story-emblem">
+        <span class="story-emblem-icon">🥦</span>
+        <span class="story-emblem-year">Est. Late 1990s</span>
+        <span class="story-emblem-name">Willowbrook<br>Produce</span>
+        <span class="story-emblem-sub">Langley, BC</span>
+      </div>
+      <div class="story-badge">
+        <span class="story-badge-num">27<small style="font-size:0.9rem">+</small></span>
+        <span class="story-badge-label">Years<br>Serving<br>Langley</span>
+      </div>
+    </div>
+    <div class="story-text">
+      <span class="section-label">Who We Are</span>
+      <h2>Grown from the ground up, <em>one box at a time</em></h2>
+      <p>
+        What started as a small stand with a handshake promise to carry only the freshest produce has grown into one of Langley's most trusted local markets. For over 27 years, we've built relationships with farmers across the Fraser Valley and beyond, so what arrives in your bag is never an afterthought.
+      </p>
+      <p>
+        We are family-owned and family-run. Every crate is reviewed. Every price is honest. When a crop isn't up to standard, it doesn't make the shelf. That's not a policy we wrote down. It's just how we've always operated.
+      </p>
+      <p>
+        Our customers aren't foot traffic. They're neighbours, regulars, and people who have been coming back season after season because they know they'll leave with something good. Over 118 Google reviews and a 4.6-star average tell you what we can't say ourselves.
+      </p>
+      <div class="story-highlights reveal">
+        <div class="highlight-box">
+          <strong>Location</strong>
+          <span>6343 198 St, Langley, BC</span>
+        </div>
+        <div class="highlight-box">
+          <strong>Hours</strong>
+          <span>Mon-Sat 9am-7pm, Sun 9am-6pm</span>
+        </div>
+        <div class="highlight-box">
+          <strong>Rating</strong>
+          <span>4.6 stars across 118+ reviews</span>
+        </div>
+        <div class="highlight-box">
+          <strong>Specialty</strong>
+          <span>Local, seasonal, direct from farm</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES SECTION -->
+  <section class="values-section">
+    <div class="values-inner">
+      <span class="section-label">What Drives Us</span>
+      <h2>Six values that have never changed</h2>
+      <div class="values-grid">
+        <div class="value-card">
+          <span class="value-icon">🌾</span>
+          <h3>Farm-First Sourcing</h3>
+          <p>We buy directly from local farmers whenever the season allows. The shorter the chain, the fresher the produce and the more money stays in BC hands.</p>
+        </div>
+        <div class="value-card">
+          <span class="value-icon">🤝</span>
+          <h3>Honest Pricing</h3>
+          <p>No markups built on brand names or fancy packaging. Our prices reflect what the produce is worth, not what the market thinks you'll pay.</p>
+        </div>
+        <div class="value-card">
+          <span class="value-icon">✅</span>
+          <h3>Quality Control</h3>
+          <p>Every item on the shelf passed someone's eyes. If we wouldn't take it home ourselves, it doesn't go out. Soft, bruised, or off-spec goes back or gets pulled.</p>
+        </div>
+        <div class="value-card">
+          <span class="value-icon">🌍</span>
+          <h3>Community Roots</h3>
+          <p>Willowbrook is part of Langley. We sponsor, we show up, and we hire locally. Supporting this market means supporting the broader community around it.</p>
+        </div>
+        <div class="value-card">
+          <span class="value-icon">📦</span>
+          <h3>Variety Year-Round</h3>
+          <p>From exotic fruits to everyday staples, we curate our stock with intention. You'll find what you need here, and often discover something new beside it.</p>
+        </div>
+        <div class="value-card">
+          <span class="value-icon">💬</span>
+          <h3>Real Relationships</h3>
+          <p>Staff know your face. We remember what you like. That's not a customer service strategy. It's just what happens when you care about the people walking through the door.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM SECTION -->
+  <section class="team-section">
+    <div class="team-inner">
+      <div class="team-header reveal">
+        <span class="section-label">The People Behind It</span>
+        <h2>A team that genuinely cares</h2>
+        <p>Every person here takes pride in the work. It shows in the produce, the shelves, and the way they treat every customer who walks in.</p>
+      </div>
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-avatar">👨‍🌾</div>
+          <div class="team-name">Rupinder</div>
+          <div class="team-role">Owner & Produce Buyer</div>
+          <p class="team-quote">"Customers call Rupinder out by name just to say thank you. That says everything."</p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">👩‍💼</div>
+          <div class="team-name">Sunny</div>
+          <div class="team-role">Operations</div>
+          <p class="team-quote">"Sunny made us feel like family from day one. Professional, warm, and always on top of things."</p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">👨‍💼</div>
+          <div class="team-name">Harpreet</div>
+          <div class="team-role">Customer Experience</div>
+          <p class="team-quote">"I came in looking for one thing and Harpreet helped me find three things I didn't know I needed."</p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">👩‍🌾</div>
+          <div class="team-name">Dolly</div>
+          <div class="team-role">Team Lead</div>
+          <p class="team-quote">"Dolly has such great energy. You can tell she loves what she does, and it rubs off on everyone."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMMUNITY SECTION -->
+  <section class="community-section">
+    <div class="community-inner">
+      <div class="community-text reveal">
+        <span class="section-label">Community Impact</span>
+        <h2>Keeping money in the Fraser Valley</h2>
+        <p>
+          Every purchase at Willowbrook Produce has a ripple effect. When we source from local farms, we're helping those families stay viable. When we hire locally and pay fairly, we're investing in Langley. When we price honestly, we make good food accessible to everyone, not just those who can afford a premium.
+        </p>
+        <p>
+          Over 27 years, that adds up. We've watched kids grow up and come back with their own families. We've seen farms we work with expand because they had a reliable buyer. We've heard from customers who drive past three other stores because ours is worth it to them.
+        </p>
+        <p>
+          We don't advertise that loudly. But it matters to us every single day.
+        </p>
+        <a href="index.html#farmers">See our farmer partnerships &rarr;</a>
+      </div>
+      <div class="community-stats">
+        <div class="cstat">
+          <div class="cstat-num">27<span>+</span></div>
+          <div class="cstat-label">Years in Business</div>
+        </div>
+        <div class="cstat">
+          <div class="cstat-num">4.6<span>★</span></div>
+          <div class="cstat-label">Google Rating</div>
+        </div>
+        <div class="cstat">
+          <div class="cstat-num">118<span>+</span></div>
+          <div class="cstat-label">Customer Reviews</div>
+        </div>
+        <div class="cstat">
+          <div class="cstat-num">100<span>%</span></div>
+          <div class="cstat-label">Family Owned</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROMISE SECTION -->
+  <section class="promise-section">
+    <div class="promise-inner">
+      <h2>Still here.<br><em>Still the same promise.</em></h2>
+      <p>
+        Twenty-seven years later, our commitment is identical to what it was on day one: bring you the best produce we can find, at prices that respect you, from people who are genuinely happy you came in.
+      </p>
+      <div class="promise-btns">
+        <a href="index.html#hours" class="btn-primary">Visit Us Today</a>
+        <a href="index.html#reviews" class="btn-ghost">Read Our Reviews</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="footer-brand-logo" href="index.html">
+          <div class="footer-logo-circle">🌿</div>
+          <span class="footer-logo-text">Willowbrook Produce</span>
+        </a>
+        <p>Fresh, local, and honest. Serving Langley, BC for over 27 years.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/willowbrook.produce/" target="_blank" rel="noopener" aria-label="Instagram">📸</a>
+          <a href="https://www.facebook.com/Fresh.Produce.Langley.Cloverdale/" target="_blank" rel="noopener" aria-label="Facebook">👍</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="index.html#carry">What We Carry</a></li>
+          <li><a href="index.html#farmers">Local Farmers</a></li>
+          <li><a href="index.html#reviews">Reviews</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Hours</h4>
+        <ul class="footer-hours">
+          <li><span>Monday</span><span>9am – 7pm</span></li>
+          <li><span>Tuesday</span><span>9am – 7pm</span></li>
+          <li><span>Wednesday</span><span>9am – 7pm</span></li>
+          <li><span>Thursday</span><span>9am – 7pm</span></li>
+          <li><span>Friday</span><span>9am – 7pm</span></li>
+          <li><span>Saturday</span><span>9am – 7pm</span></li>
+          <li><span>Sunday</span><span>9am – 6pm</span></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul class="footer-contact">
+          <li><span>📍</span><span>6343 198 St, Langley, BC V2Y 2E3</span></li>
+          <li><span>✉️</span><span>willowbrookproduce@outlook.com</span></li>
+          <li><span>🅿️</span><span>Free parking on site</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Willowbrook Produce. All rights reserved.</p>
+      <p>Langley, BC &middot; Fresh Local Produce</p>
+    </div>
+  </footer>
+
+  <script>
+    // Nav scroll effect
+    const nav = document.getElementById('mainNav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 40);
+    }, { passive: true });
+
+    // Mobile toggle
+    document.getElementById('navToggle').addEventListener('click', () => {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+
+    // IntersectionObserver reveals
+    const revealEls = document.querySelectorAll('.reveal, .value-card, .team-card, .cstat');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('revealed'), i * 80);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    revealEls.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
